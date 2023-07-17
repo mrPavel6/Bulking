@@ -1,0 +1,248 @@
+.program__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 1440px;
+  margin: 0 auto;
+  margin-top: 120px;
+  z-index: 55;
+}
+
+.program__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.program__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 291px;
+  height: 278px;
+  background-color: #FFFFFF;
+  margin-bottom: 100px;
+}
+.program__card:first-child {
+  border-radius: 15px 0px 0px 15px;
+}
+.program__card:nth-child(3n-1) {
+  background-color: #BCFF5E;
+  border-radius: 0px 0px 0px 0px;
+}
+.program__card:nth-child(4n-1) {
+  border-radius: 0px 15px 15px 0px;
+}
+
+.program__buttonss {
+  width: 80px;
+  height: 30px;
+  border-radius: 20px;
+  cursor: pointer;
+  color: rgb(6, 75, 180);
+  font-size: 14px;
+  line-height: 22px;
+  background-color: rgb(255, 255, 255);
+  font-weight: 500;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  border: 1px solid rgb(233, 235, 237);
+}
+.program__buttonss:hover {
+  background-color: #064BB4;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  -webkit-transform: scale3d(1.2, 1.2, 1.2);
+          transform: scale3d(1.2, 1.2, 1.2);
+  color: #FFFFFF;
+}
+
+.program__main__title {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 48px;
+  max-width: 420px;
+  text-align: center;
+  color: rgb(23, 23, 37);
+  margin-bottom: 48px;
+  margin-top: 16px;
+}
+
+.program__card_main {
+  margin-left: 15px;
+}
+
+.training__cards {
+  width: 263px;
+  color: #FFFFFF;
+  margin-left: 63px;
+}
+
+.training__title {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 48px;
+}
+
+.training__paragraph {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.program__title {
+  margin-bottom: 12px;
+  font-size: 20px;
+  margin-top: 24px;
+  line-height: 28px;
+  font-weight: 500;
+  color: rgb(28, 28, 30);
+}
+
+.program__paragraph {
+  font-size: 16px;
+  font-weight: 400;
+  width: 243px;
+  margin-bottom: 24px;
+  color: rgb(99, 99, 102);
+}
+
+.span__buttons_click {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.program__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: rgb(28, 28, 30);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+.program__button:hover {
+  color: #00C566;
+}
+
+.img__button {
+  margin-left: 10px;
+}
+
+@media (max-width: 1220.99px) {
+  .program__cards {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 2fr;
+    grid-template-columns: 1fr 2fr;
+  }
+  .program__container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .program__card {
+    margin-bottom: 0px;
+  }
+  .program__card:first-child {
+    border-radius: 15px 0px 0px 0px;
+  }
+  .program__card:nth-child(3n-1) {
+    background-color: #BCFF5E;
+    border-radius: 0px 15px 0px 0px;
+  }
+  .program__card:nth-child(4n-1) {
+    border-radius: 0px 0px 0px 0px;
+  }
+  .training__cards {
+    margin-left: 0px;
+    background-color: #BCFF5E;
+    color: rgb(28, 28, 30);
+    width: 291px;
+    height: 278px;
+  }
+  .training__cards .cards__training_cont {
+    margin-left: 15px;
+  }
+}
+@media (max-width: 1044.99px) {
+  .health__fitness__right__heartR {
+    display: none;
+  }
+}
+@media (max-width: 952.99px) {
+  .health__fitness__right__muscleR {
+    display: none;
+  }
+}
+@media (max-width: 856.99px) {
+  .health__fitness__right {
+    display: none;
+  }
+}
+@media (max-width: 626.99px) {
+  .program__cards {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+  .program__card:first-child {
+    border-radius: 15px 15px 0px 0px;
+  }
+  .program__card:nth-child(3n-1) {
+    background-color: #BCFF5E;
+    border-radius: 0px 0px 0px 0px;
+  }
+  .program__card:nth-child(4n-1) {
+    border-radius: 0px 0px 0px 0px;
+  }
+  .health__fitness__title {
+    font-size: 48px;
+    width: unset;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .health__fitness__imgs {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .health__fitness__paragraph {
+    width: unset;
+  }
+}
